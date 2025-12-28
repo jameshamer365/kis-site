@@ -5,48 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIS.ONL | The KIS Phone</title>
     <style>
-        :root { --bg: #ffffff; --text: #000000; --accent: #2563eb; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
-            line-height: 1.5;
-            color: var(--text);
-            background-color: var(--bg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
             max-width: 550px;
             margin: 0 auto;
-            padding: 3rem 1.5rem;
+            padding: 2rem;
         }
-        header { margin-bottom: 4rem; text-align: left; }
-        h1 { font-size: 3rem; font-weight: 900; letter-spacing: -2px; margin: 0; line-height: 1; }
-        .tagline { font-size: 1.1rem; color: #666; margin-top: 0.5rem; }
+        header { margin-bottom: 3rem; border-bottom: 5px solid #000; padding-bottom: 1rem; }
+        h1 { font-size: 2.5rem; margin: 0; letter-spacing: -2px; }
+        .tagline { font-weight: bold; color: #666; }
         
-        .section { margin-bottom: 3.5rem; }
-        h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-        
-        .point { margin-bottom: 2.5rem; }
-        .point-title { font-weight: 800; font-size: 1.4rem; display: block; margin-bottom: 0.75rem; letter-spacing: -0.5px; }
-        p { margin: 0; font-size: 1.1rem; color: #333; }
-        
-        .kids-box { background: #fdf2f2; border: 2px solid #ef4444; padding: 1.5rem; border-radius: 12px; margin-top: 2rem; }
-        .kids-box h3 { margin-top: 0; color: #ef4444; font-size: 1rem; text-transform: uppercase; }
+        .point { margin-bottom: 3rem; }
+        .number { font-weight: 900; font-size: 0.9rem; text-transform: uppercase; color: #888; display: block; }
+        h2 { font-size: 1.6rem; margin: 0.2rem 0 1rem 0; letter-spacing: -0.5px; }
+        p { font-size: 1.1rem; margin: 0; color: #222; }
 
-        footer { margin-top: 5rem; text-align: left; font-size: 0.9rem; border-top: 1px solid #000; padding-top: 2rem; }
-        a { color: var(--text); font-weight: bold; text-decoration: underline; }
+        /* Highlight box for the Kids section */
+        .kids-section { 
+            background: #f0f7ff; 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            border: 2px solid #000;
+        }
+
+        footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid #eee; }
+        a { color: #000; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>KIS.ONL</h1>
-    <p class="tagline">The Keep It Simple Phone.</p>
+    <p class="tagline">Keep It Simple • Online</p>
 </header>
 
-<main>
-    <section class="section">
-        <h2>The Manifesto</h2>
-        
-        <div class="point">
-            <span class="point-title">01. The Problem</span>
-            <p>Modern smartphones have evolved from helpful tools into predatory slot machines. They trade our attention for data, cluttering our lives with notifications, infinite scrolls, and "features" designed to keep us hooked rather than productive.</p>
-        </div>
+<div class="point">
+    <span class="number">01. The Background / Problem</span>
+    <h2>Digital Overload</h2>
+    <p>Modern smartphones have become predatory. They are designed to steal our time through infinite scrolls and constant notifications, turning a helpful tool into a source of anxiety.</p>
+</div>
 
-        <div class="point">
+<div class="point">
+    <span class="number">02. The Solution</span>
+    <h2>Intentional Technology</h2>
+    <p>We believe technology should serve you, then get out of the way. The solution is a return to utility: devices that help you accomplish a task without trying to own your attention.</p>
+</div>
+
+<div class="point">
+    <span class="number">03. The KIS Phone</span>
+    <h2>A Highly Functional Tool</h2>
+    <p>The KIS Phone provides all the good—essential communication, high-speed tools, and modern reliability—without any of the bad. No tracking, no algorithms, no bloatware. Pure functionality.</p>
+</div>
+
+<div class="point kids-section">
+    <span class="number">04. K.I.S.S. (Keep It Super Simple)</span>
+    <h2>Designed for Kids</h2>
+    <p>Children deserve a safe entry into the digital world. Our "Super Simple" interface provides essential connectivity for kids without the addictive hooks and dangers of the standard modern web.</p>
+</div>
+
+<footer>
+    <p>Contact: <a href="mailto:hello@kis.onl">hello@kis.onl</a></p>
+</footer>
+
+</body>
+</html>
