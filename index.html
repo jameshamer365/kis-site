@@ -30,8 +30,28 @@
             border: 2px solid #000;
         }
 
-        footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid #eee; }
-        a { color: #000; font-weight: bold; }
+        /* New Contact Section */
+        .contact-box {
+            margin-top: 5rem;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+
+        footer { margin-top: 4rem; padding-bottom: 2rem; text-align: center; font-size: 0.8rem; color: #888; }
     </style>
 </head>
 <body>
@@ -65,8 +85,14 @@
     <p>Children deserve a safe entry into the digital world. Our "Super Simple" interface provides essential connectivity for kids without the addictive hooks and dangers of the standard modern web.</p>
 </div>
 
+<div class="contact-box">
+    <h3>Join the Movement</h3>
+    <p>Be the first to know when the KIS Phone project launches.</p>
+    <a href="mailto:info@kis.onl?subject=KIS%20Phone%20Inquiry" class="btn">Email info@kis.onl</a>
+</div>
+
 <footer>
-    <p>Contact: <a href="mailto:hello@kis.onl">hello@kis.onl</a></p>
+    <p>&copy; 2025 KIS.ONL • Built with Intention</p>
 </footer>
 
 </body>
