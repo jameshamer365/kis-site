@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIS.ONL | The KIS Phone</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #000; max-width: 550px; margin: 0 auto; padding: 2rem; }
-        header { margin-bottom: 2rem; border-bottom: 5px solid #000; }
-        h1 { font-size: 2.5rem; margin: 0; letter-spacing: -2px; }
-        .tagline { font-weight: bold; color: #666; }
-        
-        /* Image Styling */
-        .hero-image { width: 100%; border-radius: 12px; margin: 1.5rem 0; border: 1px solid #eee; }
-
-        .point { margin-bottom: 3.5rem; }
-        .number { font-weight: 900; font-size: 0.8rem; text-transform: uppercase; color: #888; display: block; }
-        h2 { font-size: 1.8rem; margin: 0.2rem 0 0.8rem 0; letter-spacing: -0.5px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #000; background-color: #fff; max-width: 600px; margin: 0 auto; padding: 2rem; }
+        header { margin-bottom: 3rem; border-bottom: 5px solid #000; padding-bottom: 1rem; }
+        h1 { font-size: 2.8rem; margin: 0; letter-spacing: -2px; }
+        .tagline { font-weight: bold; color: #666; font-size: 1.2rem; }
+        .point { margin-bottom: 4rem; }
+        .number { font-weight: 900; font-size: 0.9rem; text-transform: uppercase; color: #888; display: block; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.8rem; margin: 0 0 1rem 0; letter-spacing: -0.5px; line-height: 1.2; }
         p { font-size: 1.15rem; margin: 0; color: #222; }
+        
+        /* Spec Table Styling */
+        .spec-container { background: #000; color: #fff; padding: 2rem; border-radius: 12px; margin-top: 1.5rem; }
+        .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; border-top: 1px solid #444; padding-top: 15px; margin-top: 10px; }
+        .spec-item { font-size: 0.85rem; border-bottom: 1px solid #222; padding-bottom: 8px; }
+        .spec-label { display: block; color: #888; text-transform: uppercase; font-size: 0.65rem; letter-spacing: 1px; }
+        
+        /* Extras Section */
+        .extras-section { background: #fffbe6; padding: 2rem; border: 2px dashed #d4a017; border-radius: 12px; margin-top: 2rem; }
+        .extras-list { margin-top: 1rem; padding-left: 1.2rem; }
+        .extras-list li { margin-bottom: 0.8rem; font-size: 1.1rem; }
 
-        .kids-section { background: #f0f7ff; padding: 1.5rem; border-radius: 8px; border: 2px solid #000; }
-        .contact-box { margin-top: 5rem; padding: 2rem; background: #f9f9f9; border-radius: 12px; text-align: center; }
-        .btn { display: inline-block; background: #000; color: #fff; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 30px; margin-top: 1rem; }
+        .evidence-section { background: #f9f9f9; padding: 2rem; border-radius: 8px; border-left: 5px solid #000; }
+        .contact-box { margin-top: 5rem; padding: 3rem 2rem; background: #000; color: #fff; border-radius: 12px; text-align: center; }
+        .btn { display: inline-block; background: #fff; color: #000; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: bold; border-radius: 40px; margin-top: 1.5rem; }
+        footer { margin-top: 5rem; padding-bottom: 3rem; text-align: center; font-size: 0.9rem; color: #aaa; }
     </style>
 </head>
 <body>
@@ -30,37 +38,70 @@
     <p class="tagline">Keep It Simple • Online</p>
 </header>
 
-<img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1000&auto=format&fit=crop" class="hero-image" alt="The KIS Phone Concept">
-
 <div class="point">
-    <span class="number">01. The Problem</span>
-    <h2>Digital Overload</h2>
-    <p>Modern smartphones have become predatory. They are designed to steal our time through infinite scrolls and constant notifications, turning a helpful tool into a source of anxiety.</p>
+    <span class="number">01. The Background</span>
+    <h2>The Digital Shift</h2>
+    <p>The era of the "pocket computer" began with a promise of freedom. However, technology shifted from empowering the user to capturing the user. We have moved from a world of tools that help us live, to a world of devices that demand we stay.</p>
 </div>
 
 <div class="point">
-    <span class="number">02. The Solution</span>
-    <h2>Intentional Technology</h2>
-    <p>We believe technology should serve you, then get out of the way. The solution is a return to utility: devices that help you accomplish a task without trying to own your attention.</p>
+    <span class="number">02. The Problem</span>
+    <h2>A Crisis of Attention</h2>
+    <p>Today’s smartphones are the frontline of the "Attention Economy." **For children and teenagers, the impact is severe: research shows that early smartphone exposure can hinder critical cognitive development, leading to reduced focus and increased anxiety.**</p>
 </div>
 
 <div class="point">
-    <span class="number">03. The KIS Phone</span>
-    <h2>A Highly Functional Tool</h2>
-    <p>The KIS Phone provides all the good—essential communication, high-speed tools, and modern reliability—without any of the bad. No tracking, no algorithms, no bloatware. Pure functionality.</p>
+    <span class="number">03. The Solution</span>
+    <h2>The Utility Device</h2>
+    <p>Digital Minimalism isn't about being "anti-tech"—it is about intentionality. By stripping away predatory apps, we return the phone to its rightful place as a high-performance tool that respects your time and focus.</p>
 </div>
 
-<div class="point kids-section">
-    <span class="number">04. K.I.S.S. (Keep It Super Simple)</span>
-    <h2>Designed for Kids</h2>
-    <p>Children deserve a safe entry into the digital world. Our "Super Simple" interface provides essential connectivity for kids without the addictive hooks and dangers of the standard modern web.</p>
+<div class="point">
+    <span class="number">04. The Device</span>
+    <h2>Industrial Strength. Pure Utility.</h2>
+    <p>The KIS Phone is a premium hardware experience designed for professionals. It combines extreme durability with high-speed connectivity, ensuring you have the tools you need without the distractions you don't.</p>
+
+    <div class="spec-container">
+        <strong>Hardware Specifications</strong>
+        <div class="spec-grid">
+            <div class="spec-item"><span class="spec-label">Network</span>5G / Global LTE</div>
+            <div class="spec-item"><span class="spec-label">Durability</span>IP68, IP69 & Military Grade</div>
+            <div class="spec-item"><span class="spec-label">Audio</span>Loud & Clear Stereo Speakers</div>
+            <div class="spec-item"><span class="spec-label">Display</span>Compact Pro Display</div>
+            <div class="spec-item"><span class="spec-label">Security</span>Precision Fingerprint Scanner</div>
+            <div class="spec-item"><span class="spec-label">Storage</span>256GB (2TB Expandable)</div>
+            <div class="spec-item"><span class="spec-label">RAM</span>6GB High-Speed Memory</div>
+            <div class="spec-item"><span class="spec-label">Camera</span>Premium Optics Sensor</div>
+        </div>
+    </div>
+</div>
+
+<div class="point extras-section">
+    <span class="number">05. The "Cool" Extras</span>
+    <h2>Beyond the Screen</h2>
+    <p>While KIS is not intended for gaming or endless surfing, we’ve included unique features designed for the real world—many of which we aim to provide through philanthropic subsidies:</p>
+    <ul class="extras-list">
+        <li><strong>Ultra-Bright Camping Light:</strong> A specialized high-lumen external LED for safety and outdoor utility.</li>
+        <li><strong>Digital Survival Toolbox:</strong> Pre-loaded tools for navigation, first aid, and outdoor survival.</li>
+        <li><strong>Subsidized Education:</strong> Ad-free, subsidized access to Spotify, language learning, and educational platforms.</li>
+        <li><strong>Emergency Resilience:</strong> Offline-first encyclopedia and medical guides for use when the grid goes down.</li>
+    </ul>
+</div>
+
+<div class="point evidence-section">
+    <span class="number">06. The Evidence</span>
+    <h2>What the Science Says</h2>
+    <p>Studies from 2025 quantify the toll of early smartphone access, linking it to declines in executive function. Experts now advocate for guarded digital access, recognizing that the developing brain isn't equipped for addictive design.</p>
 </div>
 
 <div class="contact-box">
     <h3>Join the Movement</h3>
-    <p>Be the first to know when the KIS Phone project launches.</p>
     <a href="mailto:info@kis.onl?subject=KIS%20Phone%20Inquiry" class="btn">Email info@kis.onl</a>
 </div>
+
+<footer>
+    <p>&copy; 2025 KIS.ONL • Designed for Life</p>
+</footer>
 
 </body>
 </html>
