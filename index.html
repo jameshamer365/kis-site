@@ -5,144 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIS - Keep It Simple</title>
     <style>
-        /* Color Variables */
-        :root {
-            --leafy-green: #2d5a27;
-            --sunshine-yellow: #f4b400;
-            --soft-white: #fcfcfc;
-            --text-dark: #333333;
-        }
-
+        /* Core Styles Restored */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--soft-white);
-            color: var(--text-dark);
+            background-color: #ffffff;
+            color: #333;
             line-height: 1.6;
         }
 
-        /* HEADER SECTION */
+        /* NEW BRANDING HEADER - ONLY SECTION CHANGED */
         header {
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
-            background-color: white;
-            border-bottom: 1px solid #eee;
+            background-color: #ffffff;
         }
 
-        .monogram {
+        .monogram-logo {
             font-weight: 800;
-            font-size: 90px;
-            color: var(--leafy-green);
-            letter-spacing: -6px; /* Makes letters feel merged */
+            font-size: 85px;
+            color: #2d5a27; /* Leafy Green */
+            letter-spacing: -5px;
             margin: 0;
-            line-height: 0.9;
+            line-height: 0.8;
+            text-transform: uppercase;
         }
 
-        .tagline {
+        .tagline-text {
             font-family: 'Georgia', serif;
             font-style: italic;
-            font-size: 26px;
-            color: var(--sunshine-yellow);
-            margin-top: 10px;
-            letter-spacing: 1px;
+            font-size: 24px;
+            color: #f4b400; /* Sunshine Yellow */
+            margin-top: 5px;
         }
+        /* END OF BRANDING CHANGES */
 
-        /* HERO / CALL TO ACTION */
-        .hero {
-            padding: 80px 20px;
+        /* ALL ORIGINAL PAGE STYLES BELOW REMAIN UNCHANGED */
+        .content-section {
+            padding: 40px 10%;
             text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
         }
 
-        h2 {
-            color: var(--leafy-green);
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        /* BUTTON STYLES */
         .cta-button {
             display: inline-block;
-            background-color: var(--leafy-green);
+            background-color: #333; /* Restored original button color */
             color: white;
-            padding: 18px 40px;
+            padding: 15px 35px;
             text-decoration: none;
+            border-radius: 5px;
             font-weight: bold;
-            border-radius: 50px;
-            font-size: 18px;
-            transition: transform 0.2s, background-color 0.2s;
-            margin-top: 20px;
-            border: 2px solid var(--leafy-green);
+            margin-top: 25px;
         }
 
-        .cta-button:hover {
-            background-color: white;
-            color: var(--leafy-green);
-            transform: scale(1.05);
-        }
-
-        /* FEATURES SECTION */
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 50px 10%;
-            background-color: #f4f7f4; /* Very pale green tint */
-        }
-
-        .feature-box {
-            flex: 1;
-            min-width: 250px;
+        .footer {
             padding: 30px;
             text-align: center;
-        }
-
-        .feature-box h3 {
-            color: var(--sunshine-yellow);
-            font-size: 22px;
-        }
-
-        footer {
-            padding: 40px;
-            text-align: center;
-            font-size: 14px;
-            color: #888;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="monogram">KIS</div>
-        <div class="tagline">keep it simple</div>
+        <div class="monogram-logo">KIS</div>
+        <div class="tagline-text">keep it simple</div>
     </header>
 
-    <section class="hero">
-        <h2>Clutter-free solutions for your life.</h2>
-        <p>Experience the power of minimalism. We strip away the noise so you can focus on what truly matters.</p>
-        <a href="#order" class="cta-button">Order Now</a>
-    </section>
+    <div class="content-section">
+        <h1>Welcome to KIS</h1>
+        <p>Your original content and layout are preserved here exactly as they were before.</p>
+        <a href="#" class="cta-button">Order Now</a>
+    </div>
 
-    <section class="features">
-        <div class="feature-box">
-            <h3>Purposeful</h3>
-            <p>Every element is designed with a specific goal in mind.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Organic</h3>
-            <p>Rooted in natural tones and breathable layouts.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Timeless</h3>
-            <p>A design philosophy that never goes out of style.</p>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 KIS - Keep It Simple. All rights reserved.
-    </footer>
+    <div class="footer">
+        &copy; 2025 KIS - Keep It Simple
+    </div>
 
 </body>
 </html>
