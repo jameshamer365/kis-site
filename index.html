@@ -3,106 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIS.ONL | The KIS Phone</title>
+    <title>KIS - Keep It Simple</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #000; background-color: #fff; max-width: 600px; margin: 0 auto; padding: 2rem; }
-        header { margin-bottom: 3rem; border-bottom: 5px solid #000; padding-bottom: 1rem; }
-        h1 { font-size: 2.8rem; margin: 0; letter-spacing: -2px; }
-        .tagline { font-weight: bold; color: #666; font-size: 1.2rem; }
-        .hero-image { width: 100%; border-radius: 12px; margin: 1.5rem 0; border: 1px solid #eee; }
-        .section { margin-bottom: 4rem; }
-        .label { font-weight: 900; font-size: 0.9rem; text-transform: uppercase; color: #888; display: block; margin-bottom: 0.5rem; }
-        h2 { font-size: 1.8rem; margin: 0 0 1rem 0; letter-spacing: -0.5px; line-height: 1.2; }
-        p { font-size: 1.15rem; margin: 0; color: #222; }
-        
-        .spec-container { background: #000; color: #fff; padding: 2rem; border-radius: 12px; margin-top: 1.5rem; }
-        .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; border-top: 1px solid #444; padding-top: 15px; margin-top: 10px; }
-        .spec-item { font-size: 0.85rem; border-bottom: 1px solid #222; padding-bottom: 8px; }
-        .spec-label { display: block; color: #888; text-transform: uppercase; font-size: 0.65rem; letter-spacing: 1px; }
-        
-        .extras-section { background: #fffbe6; padding: 2rem; border: 2px dashed #d4a017; border-radius: 12px; margin-top: 2rem; }
-        .extras-list { margin-top: 1rem; padding-left: 1.2rem; }
-        .extras-list li { margin-bottom: 0.8rem; font-size: 1.1rem; }
+        /* Color Variables */
+        :root {
+            --leafy-green: #2d5a27;
+            --sunshine-yellow: #f4b400;
+            --soft-white: #fcfcfc;
+            --text-dark: #333333;
+        }
 
-        .evidence-section { background: #f9f9f9; padding: 2rem; border-radius: 8px; border-left: 5px solid #000; }
-        .contact-box { margin-top: 5rem; padding: 3rem 2rem; background: #000; color: #fff; border-radius: 12px; text-align: center; }
-        .btn { display: inline-block; background: #fff; color: #000; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: bold; border-radius: 40px; margin-top: 1.5rem; }
-        footer { margin-top: 5rem; padding-bottom: 3rem; text-align: center; font-size: 0.9rem; color: #aaa; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--soft-white);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* HEADER SECTION */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        .monogram {
+            font-weight: 800;
+            font-size: 90px;
+            color: var(--leafy-green);
+            letter-spacing: -6px; /* Makes letters feel merged */
+            margin: 0;
+            line-height: 0.9;
+        }
+
+        .tagline {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 26px;
+            color: var(--sunshine-yellow);
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* HERO / CALL TO ACTION */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--leafy-green);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* BUTTON STYLES */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--leafy-green);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 20px;
+            border: 2px solid var(--leafy-green);
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: var(--leafy-green);
+            transform: scale(1.05);
+        }
+
+        /* FEATURES SECTION */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 10%;
+            background-color: #f4f7f4; /* Very pale green tint */
+        }
+
+        .feature-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            color: var(--sunshine-yellow);
+            font-size: 22px;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>KIS.ONL</h1>
-    <p class="tagline">Keep It Simple • Online</p>
-</header>
+    <header>
+        <div class="monogram">KIS</div>
+        <div class="tagline">keep it simple</div>
+    </header>
 
-<div class="section">
-    <span class="label">The Background</span>
-    <h2>The Digital Shift</h2>
-    <p>The era of the "pocket computer" began with a promise of freedom. However, technology shifted from empowering the user to capturing the user. We have moved from a world of tools that help us live, to a world of devices that demand we stay.</p>
-</div>
+    <section class="hero">
+        <h2>Clutter-free solutions for your life.</h2>
+        <p>Experience the power of minimalism. We strip away the noise so you can focus on what truly matters.</p>
+        <a href="#order" class="cta-button">Order Now</a>
+    </section>
 
-<div class="section">
-    <span class="label">The Problem</span>
-    <h2>A Crisis of Attention</h2>
-    <img src="problem.jpg" class="hero-image" alt="Digital Distraction">
-    <p>Modern smartphones are designed for distraction. **The average adult now spends between 4 and 5 hours every day on their device—equivalent to roughly 40% of their waking life.** We see it every day: an adult intending to work but getting pulled into the infinite scroll of social media and algorithmic feeds. Before they realize it, the day is gone and the to-do list remains untouched. **For teenagers, this is even more severe, with many averaging nearly 5 hours a day on social media alone**, hindering critical cognitive development during years when the brain is most vulnerable to addictive hooks.</p>
-</div>
-
-<div class="section">
-    <span class="label">The Solution</span>
-    <h2>Reclaimed Focus</h2>
-    <img src="solution.jpg" class="hero-image" alt="Focused workspace">
-    <p>The solution is a return to utility. By choosing technology that respects your time, you can immerse yourself in deep work and accomplish your goals with a sense of peace. When the phone is a tool rather than a master, you reclaim your productivity and your life. This is the power of intentional technology.</p>
-</div>
-
-<div class="section">
-    <span class="label">The Device</span>
-    <h2>Industrial Strength. Pure Utility.</h2>
-    <p>The KIS Phone combines professional-grade hardware with a distraction-free software experience. It is built to last and designed to get out of your way.</p>
-
-    <div class="spec-container">
-        <strong>Hardware Specifications</strong>
-        <div class="spec-grid">
-            <div class="spec-item"><span class="spec-label">Network</span>5G / Global LTE</div>
-            <div class="spec-item"><span class="spec-label">Durability</span>IP68, IP69 & Military Grade</div>
-            <div class="spec-item"><span class="spec-label">Audio</span>Loud & Clear Stereo Speakers</div>
-            <div class="spec-item"><span class="spec-label">Display</span>Compact Pro Display</div>
-            <div class="spec-item"><span class="spec-label">Security</span>Fingerprint Scanner</div>
-            <div class="spec-item"><span class="spec-label">Storage</span>256GB (2TB Expandable)</div>
-            <div class="spec-item"><span class="spec-label">RAM</span>6GB High-Speed Memory</div>
-            <div class="spec-item"><span class="spec-label">Camera</span>Premium Optics Sensor</div>
+    <section class="features">
+        <div class="feature-box">
+            <h3>Purposeful</h3>
+            <p>Every element is designed with a specific goal in mind.</p>
         </div>
-    </div>
-</div>
+        <div class="feature-box">
+            <h3>Organic</h3>
+            <p>Rooted in natural tones and breathable layouts.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Timeless</h3>
+            <p>A design philosophy that never goes out of style.</p>
+        </div>
+    </section>
 
-<div class="section extras-section">
-    <span class="label">The Extras</span>
-    <h2>Designed for the Real World</h2>
-    <p>While KIS is not intended for gaming or endless surfing, we’ve included unique features that bring value to your life outside the screen—many of which we aim to provide through philanthropic subsidies:</p>
-    <ul class="extras-list">
-        <li><strong>Ultra-Bright Camping Light:</strong> High-lumen LED for true utility.</li>
-        <li><strong>Survival Toolbox:</strong> Pre-loaded navigation and first aid guides.</li>
-        <li><strong>Subsidized Education:</strong> Ad-free access to learning platforms and music.</li>
-        <li><strong>Grid-Independent Tools:</strong> Offline medical encyclopedias and maps.</li>
-    </ul>
-</div>
-
-<div class="section evidence-section">
-    <span class="label">The Evidence</span>
-    <h2>What the Science Says</h2>
-    <p>Studies quantify the toll of early smartphone access, linking it to declines in executive function and increased anxiety. The consensus is clear: we need tools that respect our cognitive health.</p>
-</div>
-
-<div class="contact-box">
-    <h3>Join the Movement</h3>
-    <a href="mailto:info@kis.onl?subject=KIS%20Phone%20Inquiry" class="btn">Email info@kis.onl</a>
-</div>
-
-<footer>
-    <p>&copy; 2025 KIS.ONL • Designed for Life</p>
-</footer>
+    <footer>
+        &copy; 2025 KIS - Keep It Simple. All rights reserved.
+    </footer>
 
 </body>
 </html>
