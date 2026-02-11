@@ -7,48 +7,34 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #000; background-color: #fff; max-width: 700px; margin: 0 auto; padding: 0 1.5rem 5rem 1.5rem; scroll-behavior: smooth; }
         
-        /* STICKY NAV */
         nav { position: sticky; top: 0; background: rgba(255,255,255,0.95); padding: 1rem 0; border-bottom: 1px solid #eee; z-index: 1000; text-align: center; }
-        nav a { text-decoration: none; color: #555; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin: 0 10px; letter-spacing: 1px; }
-        nav a:hover { color: #2d5a27; }
+        nav a { text-decoration: none; color: #555; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; margin: 0 10px; letter-spacing: 1px; }
 
-        /* BRANDING HEADER */
         header { padding: 4rem 0 3rem 0; border-bottom: 5px solid #2d5a27; text-align: center; }
         .logo-text { font-size: 4.5rem; margin: 0; letter-spacing: -4px; font-weight: 900; line-height: 1; }
         .green-letter { color: #2d5a27; }
         .yellow-letter { color: #f4b400; }
         .tagline { font-weight: bold; font-size: 1.6rem; font-style: italic; margin-top: 10px; }
-        .green-word { color: #2d5a27; }
-        .yellow-word { color: #f4b400; }
 
-        /* SECTION STYLING */
         .section { padding: 4rem 0; border-bottom: 1px solid #f0f0f0; }
         .label { font-weight: 900; font-size: 0.8rem; text-transform: uppercase; color: #2d5a27; display: block; margin-bottom: 0.5rem; }
         h2 { font-size: 2.2rem; margin: 0 0 1.5rem 0; letter-spacing: -1px; line-height: 1.1; }
         p { font-size: 1.2rem; margin-bottom: 1.5rem; color: #333; }
         
-        .manifesto-img { max-width: 85%; height: auto; display: block; margin: 30px auto; border-radius: 8px; border: 1px solid #eee; }
+        .manifesto-img { max-width: 100%; height: auto; display: block; margin: 30px auto; border-radius: 8px; border: 1px solid #eee; }
 
-        /* EXPANDABLE FOLDERS (DETAILS/SUMMARY) */
-        details { background: #f9f9f9; padding: 1rem 1.5rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #eee; transition: all 0.3s ease; }
-        details[open] { background: #fff; border: 1px solid #2d5a27; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        /* FOLDERS FOR SCIENCE & RESEARCH */
+        details { background: #f9f9f9; padding: 1rem 1.5rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #eee; }
         summary { font-weight: bold; font-size: 1.1rem; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-        summary::-webkit-details-marker { display: none; }
         summary::after { content: "+"; font-size: 1.5rem; color: #2d5a27; }
         details[open] summary::after { content: "−"; }
-        
-        .folder-content { padding-top: 1rem; font-size: 1.05rem; }
-        .folder-content ul { padding-left: 1.2rem; }
-        .folder-content li { margin-bottom: 0.5rem; }
 
-        /* SPEC BOXES */
-        .spec-container { background: #000; color: #fff; padding: 2rem; border-radius: 12px; }
+        .spec-container { background: #000; color: #fff; padding: 2rem; border-radius: 12px; margin-top: 2rem; }
         .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 1rem; }
         .spec-item { font-size: 0.85rem; border-bottom: 1px solid #333; padding-bottom: 8px; }
         .spec-label { display: block; color: #888; text-transform: uppercase; font-size: 0.6rem; letter-spacing: 1px; }
 
-        .btn { display: inline-block; background: #000; color: #fff; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: bold; border-radius: 40px; margin-top: 1.5rem; border: 2px solid #000; transition: 0.3s; }
-        .btn:hover { background: transparent; color: #000; }
+        .btn { display: inline-block; background: #000; color: #fff; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: bold; border-radius: 40px; margin-top: 1.5rem; }
         
         footer { padding: 4rem 0; text-align: center; font-size: 0.9rem; color: #aaa; }
     </style>
@@ -56,10 +42,10 @@
 <body>
 
 <nav>
-    <a href="#background">Background</a>
-    <a href="#science">Science</a>
-    <a href="#device">Device</a>
-    <a href="#contact">Contact</a>
+    <a href="#problem">The Problem</a>
+    <a href="#solution">The Solution</a>
+    <a href="#science">The Science</a>
+    <a href="#device">The Phone</a>
 </nav>
 
 <header>
@@ -71,50 +57,42 @@
     </div>
 </header>
 
-<div id="background" class="section">
-    <span class="label">The Movement</span>
-    <h2>A Global Listening Tour</h2>
-    <p>KIS was not born in a lab, but in the living rooms of thousands of parents. We have reached out to parental organizations worldwide to understand exactly what is needed to protect the next generation.</p>
-    
-    <details>
-        <summary>What Parents Told Us</summary>
-        <div class="folder-content">
-            <ul>
-                <li><strong>Hardware Security:</strong> Disabling a camera via software isn't enough; parents want it physically removed.</li>
-                <li><strong>The Browser Barrier:</strong> Access to the unfiltered web is the primary gateway to harmful content.</li>
-                <li><strong>Compact Design:</strong> Rugged phones shouldn't be too heavy for a teenager's hand or an adult's pocket.</li>
-            </ul>
-        </div>
-    </details>
+<div id="problem" class="section">
+    <span class="label">The Problem</span>
+    <h2>A Crisis of Attention</h2>
+    <img src="problem.jpg" class="manifesto-img" alt="The Challenge">
+    <p>Modern smartphones are designed for distraction. The average adult now spends roughly 40% of their waking life staring at a screen. We have moved from a world of tools that help us live, to a world of devices that demand we stay.</p>
+</div>
+
+<div id="solution" class="section">
+    <span class="label">The Solution</span>
+    <h2>Reclaimed Focus: The KIS Phone</h2>
+    <img src="solution.jpg" class="manifesto-img" alt="The KIS Solution">
+    <p>The solution is a return to utility. By choosing technology that respects your time, you reclaim your productivity and your peace of mind. The KIS Phone is a professional-grade tool designed to get out of your way.</p>
 </div>
 
 <div id="science" class="section">
-    <span class="label">The Evidence</span>
-    <h2>The Science of Presence</h2>
-    <p>Our design is driven by clinical research into neurological health and the benefits of a digital detox.</p>
+    <span class="label">The Research</span>
+    <h2>Evidence-Based Design</h2>
+    <p>Our handsets are driven by feedback from thousands of parents and clinical research into neurological health.</p>
 
     <details>
-        <summary>Impact on the Frontal Cortex</summary>
-        <div class="folder-content">
-            <p>Research indicates that constant notifications and algorithmic loops interfere with the development of the <strong>pre-frontal cortex</strong>—the brain's center for impulse control and focus. By removing these distractions, KIS supports cognitive growth in children and recovery in adults.</p>
+        <summary>Global Parental Outreach</summary>
+        <div style="padding-top: 10px;">
+            <p>We have reached out to parental organizations worldwide. The consensus for the <strong>KiSS (Junior)</strong> model was clear: hardware-level camera removal and the total elimination of web browsers are essential for child safety.</p>
         </div>
     </details>
 
     <details>
-        <summary>Benefits of a Digital Detox</summary>
-        <div class="folder-content">
-            <ul>
-                <li><strong>Reduced Anxiety:</strong> Lower cortisol levels by eliminating the "infinite scroll."</li>
-                <li><strong>Better Rest:</strong> Improved melatonin production by removing late-night blue light traps.</li>
-                <li><strong>Deep Focus:</strong> Minimalist users report a significant increase in the ability to reach "Flow State" in work and study.</li>
-            </ul>
+        <summary>The Frontal Cortex & Cognitive Health</summary>
+        <div style="padding-top: 10px;">
+            <p>Research suggests that infinite scrolls and constant notifications interfere with the development of the pre-frontal cortex. KIS provides the "digital detox" necessary for cognitive recovery and deep focus.</p>
         </div>
     </details>
 
     <details>
-        <summary>Essential Reading & Reports</summary>
-        <div class="folder-content">
-            <p>We recommend the following foundational works on digital health:</p>
+        <summary>Essential Reading</summary>
+        <div style="padding-top: 10px;">
             <ul>
                 <li><em>The Anxious Generation</em> – Jonathan Haidt</li>
                 <li><em>Digital Minimalism</em> – Cal Newport</li>
@@ -125,29 +103,29 @@
 </div>
 
 <div id="device" class="section">
-    <span class="label">The Specs</span>
+    <span class="label">The Device</span>
     <h2>Industrial Strength. Pure Utility.</h2>
-    <img src="kis-adult.jpg" class="manifesto-img" alt="Kis Adult Model">
+    <p>Available in two sizes: <strong>Kis</strong> (Adult) and <strong>KiSS</strong> (Junior). No social media. No distractions. Just professional power.</p>
     
     <div class="spec-container">
-        <strong>Hardware Benchmarks</strong>
+        <strong>Technical Benchmarks</strong>
         <div class="spec-grid">
             <div class="spec-item"><span class="spec-label">Network</span>5G / Global LTE</div>
             <div class="spec-item"><span class="spec-label">Durability</span>IP69K / Military Grade</div>
-            <div class="spec-item"><span class="spec-label">Charging</span>33W Fast Charge</div>
-            <div class="spec-item"><span class="spec-label">Display</span>Compact Pro (5.8-6.2")</div>
-            <div class="spec-item"><span class="spec-label">Storage</span>256GB (Expandable)</div>
+            <div class="spec-item"><span class="spec-label">Body</span>Compact & Lightweight</div>
             <div class="spec-item"><span class="spec-label">Audio</span>Hi-Fi Stereo Speakers</div>
+            <div class="spec-item"><span class="spec-label">Storage</span>256GB (Expandable)</div>
+            <div class="spec-item"><span class="spec-label">Battery</span>33W Fast Charging</div>
         </div>
     </div>
 </div>
 
-<div id="contact" class="section" style="text-align: center;">
-    <span class="label">Get Involved</span>
-    <h2>Join the Movement</h2>
-    <p>We are currently finalizing our founding production run.</p>
+<div id="contact" class="section" style="text-align: center; border-bottom: none;">
+    <span class="label">Join the Movement</span>
+    <h2>Ready for a Change?</h2>
+    <p>For more information on the Kis or KiSS models, contact us:</p>
     <p style="font-size: 1.5rem; font-weight: bold;">info@kis.onl</p>
-    <a href="mailto:info@kis.onl" class="btn">Email Us</a>
+    <a href="mailto:info@kis.onl" class="btn">Get in Touch</a>
 </div>
 
 <footer>
