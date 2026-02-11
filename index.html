@@ -16,12 +16,21 @@
         .green-word { color: #2d5a27; }
         .yellow-word { color: #f4b400; }
 
-        /* MANIFESTO V9.0 CONTENT STYLING */
-        .hero-image { width: 100%; border-radius: 12px; margin: 1.5rem 0; border: 1px solid #eee; display: block; }
+        /* CONTENT STYLING */
         .section { margin-bottom: 4rem; }
         .label { font-weight: 900; font-size: 0.9rem; text-transform: uppercase; color: #2d5a27; display: block; margin-bottom: 0.5rem; }
         h2 { font-size: 1.8rem; margin: 0 0 1rem 0; letter-spacing: -0.5px; line-height: 1.2; }
         p { font-size: 1.15rem; margin: 0; color: #222; }
+        
+        /* IMAGE STYLING - REDUCED SIZE */
+        .manifesto-img { 
+            max-width: 80%; /* This makes the photos slightly smaller */
+            height: auto; 
+            display: block; 
+            margin: 30px auto; 
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
         
         .spec-container { background: #000; color: #fff; padding: 2rem; border-radius: 12px; margin-top: 1.5rem; }
         .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; border-top: 1px solid #444; padding-top: 15px; margin-top: 10px; }
@@ -34,7 +43,20 @@
 
         .evidence-section { background: #f9f9f9; padding: 2rem; border-radius: 8px; border-left: 5px solid #2d5a27; }
         .contact-box { margin-top: 5rem; padding: 3rem 2rem; background: #000; color: #fff; border-radius: 12px; text-align: center; }
-        .btn { display: inline-block; background: #fff; color: #000; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: bold; border-radius: 40px; margin-top: 1.5rem; }
+        
+        .btn { 
+            display: inline-block; 
+            background: #fff; 
+            color: #000; 
+            padding: 1.2rem 2.5rem; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 40px; 
+            margin-top: 1.5rem;
+            border: none;
+            cursor: pointer;
+        }
+        
         footer { margin-top: 5rem; padding-bottom: 3rem; text-align: center; font-size: 0.9rem; color: #aaa; }
     </style>
 </head>
@@ -58,21 +80,21 @@
 <div class="section">
     <span class="label">The Problem</span>
     <h2>A Crisis of Attention</h2>
-    <img src="your-first-image.jpg" style="max-width: 100%; max-height: 450px; width: auto; display: block; margin: 20px auto;">
-    <p>Modern smartphones are designed for distraction. **The average adult now spends between 4 and 5 hours every day on their device—equivalent to roughly 40% of their waking life.** We see it every day: an adult intending to work but getting pulled into the infinite scroll of social media and algorithmic feeds. Before they realize it, the day is gone and the to-do list remains untouched.</p>
+    <img src="problem.jpg" class="manifesto-img" alt="The Challenge">
+    <p>Modern smartphones are designed for distraction. **The average adult now spends between 4 and 5 hours every day on their device—equivalent to roughly 40% of their waking life.**</p>
 </div>
 
 <div class="section">
     <span class="label">The Solution</span>
     <h2>Reclaimed Focus</h2>
-   <img src="your-second-image.jpg" style="max-width: 100%; max-height: 450px; width: auto; display: block; margin: 20px auto;">
-    <p>The solution is a return to utility. By choosing technology that respects your time, you can immerse yourself in deep work and accomplish your goals with a sense of peace. When the phone is a tool rather than a master, you reclaim your productivity and your life.</p>
+    <img src="solution.jpg" class="manifesto-img" alt="The Solution">
+    <p>The solution is a return to utility. By choosing technology that respects your time, you can immerse yourself in deep work and accomplish your goals with a sense of peace.</p>
 </div>
 
 <div class="section">
     <span class="label">The Device</span>
     <h2>Industrial Strength. Pure Utility.</h2>
-    <p>The KIS Phone combines professional-grade hardware with a distraction-free software experience. It is built to last and designed to get out of your way.</p>
+    <p>The KIS Phone combines professional-grade hardware with a distraction-free software experience.</p>
 
     <div class="spec-container">
         <strong>Hardware Specifications</strong>
@@ -92,7 +114,6 @@
 <div class="section extras-section">
     <span class="label">The Extras</span>
     <h2>Designed for the Real World</h2>
-    <p>While KIS is not intended for gaming or endless surfing, we’ve included unique features that bring value to your life outside the screen:</p>
     <ul class="extras-list">
         <li><strong>Ultra-Bright Camping Light:</strong> High-lumen LED for true utility.</li>
         <li><strong>Survival Toolbox:</strong> Pre-loaded navigation and first aid guides.</li>
@@ -101,31 +122,20 @@
     </ul>
 </div>
 
-<div class="section evidence-section">
-    <span class="label">The Evidence</span>
-    <h2>What the Science Says</h2>
-    <p>Studies quantify the toll of early smartphone access, linking it to declines in executive function and increased anxiety. The consensus is clear: we need tools that respect our cognitive health.</p>
-</div>
-
 <div class="contact-box">
     <h3>Join the Movement</h3>
-  <a href="#contact" style="text-decoration: none;">
-    <button type="button" class="btn">MORE INFO</button>
-</a>
-</a>
+    <a href="#contact" class="btn">MORE INFO</a>
 </div>
+
 <section id="contact" style="text-align: center; padding: 50px 20px;">
     <h2>Get in Touch</h2>
     <p>For more information on the <strong>Kis</strong> (Adult) or <strong>Kiss</strong> (Children) models, please email us directly:</p>
     <p style="font-size: 1.5rem; font-weight: bold;">info@kis.onl</p>
 </section>
+
 <footer>
-    <p>&copy; 2025 KIS • Keep It Simple</p>
+    <p>&copy; 2026 KIS • Keep It Simple</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
